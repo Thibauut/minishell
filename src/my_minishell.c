@@ -11,7 +11,7 @@ int print_prompt(void)
 {
     write(0, "\e[1m",  5);
     write(0, "\x1B[32m", 6);
-    write(0, "[THIB SHELL 2] ", 15);
+    write(0, "[minishell] ", 15);
     write(0, "\e[1m",  5);
     write(0, "\x1B[35m", 6);
     write(0, ">$ ", 3);

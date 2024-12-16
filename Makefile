@@ -5,7 +5,7 @@
 ## Makefile
 ##
 
-SRC	=	mysh.c						\
+SRC	=	minishell.c						\
 		src/my_func.c				\
 		src/my_func2.c				\
 		src/my_func3.c				\
@@ -41,13 +41,12 @@ NC            =    \033[0;0m
 
 OBJ	=	$(SRC:.c=.o)
 
-NAME	= mysh
+NAME	= minishell
 
 all	:	$(NAME)
 
 $(NAME)	:	$(OBJ)
 	gcc	-g $(OBJ) 	-o	$(NAME)
-	@echo	-e	"[$(GREEN)COMPILED$(NC)]	\"$(CYAN)$@$(NC)\"	[$(GREEN)CREATED$(NC)]"
 
 clean :
 	rm	-f	*.o

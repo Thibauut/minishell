@@ -51,7 +51,7 @@ void my_exec(char *path, char **env, int *ret, my_env_t *m)
             *ret = 2;
         status_checker(ret, status);
     } else {
-        if (execve(path, m->tab, env) == -1);
+        if (execve(path, m->tab, env) == -1)
             exit(EXIT_FAILURE);
     }
 }
@@ -69,7 +69,7 @@ void my_exec2(char *path, char **env, int *ret, my_env_t *m)
             *ret = 2;
         status_checker(ret, status);
     } else {
-        if (execve(path, m->tab, env) == -1);
+        if (execve(path, m->tab, env) == -1)
             exit(EXIT_FAILURE);
     }
     fix_dup(m);
