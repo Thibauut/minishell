@@ -77,44 +77,6 @@ $ ./long_running_task &
 [1] 12345
 ```
 
-## Project Structure
-
-```
-minishell/
-├── Makefile
-├── README.md
-├── include
-│   └── my.h
-├── minishell.c
-└── src
-    ├── builtin
-    │   ├── my_cd.c
-    │   ├── my_cd2.c
-    │   ├── my_env.c
-    │   ├── my_exit.c
-    │   ├── my_setenv.c
-    │   ├── my_setenv2.c
-    │   └── my_unsetenv.c
-    ├── my_check_cmd.c
-    ├── my_error.c
-    ├── my_exec.c
-    ├── my_func.c
-    ├── my_func2.c
-    ├── my_func3.c
-    ├── my_get_arg.c
-    ├── my_get_arg2.c
-    ├── my_get_arg_double.c
-    ├── my_get_path.c
-    ├── my_minishell.c
-    ├── my_tab_and_space.c
-    └── symbol
-        ├── my_entry.c
-        ├── my_pipe.c
-        ├── my_pipe2.c
-        ├── my_redirection.c
-        └── my_semicolon.c
-```
-
 ## Requirements
 
 - **Operating System**: Linux or Unix-based OS
